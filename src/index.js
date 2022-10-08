@@ -26,31 +26,31 @@ function onInput(event) {
 }
 
 function addMarkup(data) {
-  const amountCountries = data.length;
+  const numberOfCountries = data.length;
 
-  if (amountCountries > 10) {
+  if (numberOfCountries > 10) {
     Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
     clearCountryList();
     clearCountryInfo();
     return;
-  } else if (amountCountries > 2 && amountCountries <= 10) {
+  } else if (numberOfCountries <= 10 && numberOfCountries > 2) {
     clearCountryInfo();
     createMarkupCountriesList(data);
     return;
-  } else if (amountCountries === 1) {
+  } else if (numberOfCountries === 1) {
     clearCountryList();
     createMarkupOfCountry(data);
   }
 }
 
 function clearCountryList() {
-  countryList.innerHTML = '';
+  refs.countryList.innerHTML = '';
 }
 
 function clearCountryInfo() {
-  countryInfo.innerHTML = '';
+  refs.countryInfo.innerHTML = '';
 }
 
 function onError() {
