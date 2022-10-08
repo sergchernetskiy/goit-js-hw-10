@@ -1,6 +1,6 @@
 import { refs } from './refs';
 
-export function createMarkupCountriesList({ flags, name }) {
+export function createMarkupCountriesList(countries) {
   const markup = countries
     .map(({ flags, name }) => {
       return `<li class="country-list__item">

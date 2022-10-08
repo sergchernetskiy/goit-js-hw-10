@@ -38,10 +38,12 @@ function addMarkup(data) {
   } else if (numberOfCountries <= 10 && numberOfCountries > 2) {
     clearCountryInfo();
     createMarkupCountriesList(data);
+    console.log(createMarkupCountriesList);
     return;
   } else if (numberOfCountries === 1) {
     clearCountryList();
     createMarkupOfCountry(data);
+    console.log(createMarkupOfCountry);
   }
 }
 
