@@ -30,20 +30,17 @@ function addMarkup(data) {
 
   if (numberOfCountries > 10) {
     Notiflix.Notify.info(
-      'Too many matches found. Please enter a more specific name.'
+      'Too many matches found. Please enter a more specific name.',
+      { position: 'left-top' }
     );
     clearCountryList();
     clearCountryInfo();
-    return;
-  } else if (numberOfCountries <= 10 && numberOfCountries > 2) {
+  } else if (numberOfCountries <= 10 && numberOfCountries >= 2) {
     clearCountryInfo();
     createMarkupCountriesList(data);
-    console.log(createMarkupCountriesList);
-    return;
   } else if (numberOfCountries === 1) {
     clearCountryList();
     createMarkupOfCountry(data);
-    console.log(createMarkupOfCountry);
   }
 }
 

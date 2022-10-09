@@ -16,7 +16,9 @@ body {
   font: inherit;
   padding: 8px;
   max-width: 320px;
+  margin-top: 15px;
   margin-bottom: 16px;
+  margin-left: 40px;
 }
 
 input {
@@ -30,7 +32,7 @@ input {
 .country-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 
   list-style: none;
 }
@@ -38,12 +40,14 @@ input {
 .country-list__item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .country-list__text {
   font-weight: 500;
+  font-size: 18px;
   color: #664eb4;
+  margin: 5;
 }
 
 .country-info__box {
