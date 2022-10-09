@@ -30,8 +30,7 @@ function addMarkup(data) {
 
   if (numberOfCountries > 10) {
     Notiflix.Notify.info(
-      'Too many matches found. Please enter a more specific name.',
-      { position: 'left-top' }
+      'Too many matches found. Please enter a more specific name.'
     );
     clearCountryList();
     clearCountryInfo();

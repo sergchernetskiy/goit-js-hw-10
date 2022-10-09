@@ -50,19 +50,29 @@ input {
   margin: 5;
 }
 
+.country-info {
+  margin-left: 40px;
+}
+
 .country-info__box {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .country-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
-.country-info__-text {
+.country-info__text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #664eb4;
+  margin: 0;
 }
 
 .country-info__name-text {
+  font-weight: 400;
+  font-size: 20px;
 }
